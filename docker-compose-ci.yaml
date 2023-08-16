@@ -1,0 +1,11 @@
+version: "3.0"
+services:
+  DriveX_bot:
+    container_name: Test_app
+    image: test_app # Specify the name of the Docker image to be built
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8887:8887"
